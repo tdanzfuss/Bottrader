@@ -15,7 +15,7 @@ services:
         ports:
             - "5432:5432"
         volumes:
-            - "./postgresData:/var/lib/postgresql/data"
+            - "./postgresData/data:/var/lib/postgresql/data"
             - "./postgresInit:/docker-entrypoint-initdb.d"
     jupyter:
         image: "tdanzfuss/sense_play"
