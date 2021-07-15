@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeAdapterService", "ExchangeAdapterService\ExchangeAdapterService.csproj", "{52DDE408-4B56-456E-9202-65A1971EA4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmService", "AlgorithmService\AlgorithmService.csproj", "{C63B661A-C0C0-4E12-8EC5-D7540D97B5D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistanceService", "PersistanceService\PersistanceService.csproj", "{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bottrader.Shared", "Bottrader.Shared\Bottrader.Shared.csproj", "{9B26EB65-5A16-4CE1-9A94-B236BA37ACB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46D54E9A-383F-47BD-8107-BC246D87C94E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52DDE408-4B56-456E-9202-65A1971EA4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DDE408-4B56-456E-9202-65A1971EA4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DDE408-4B56-456E-9202-65A1971EA4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DDE408-4B56-456E-9202-65A1971EA4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63B661A-C0C0-4E12-8EC5-D7540D97B5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63B661A-C0C0-4E12-8EC5-D7540D97B5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63B661A-C0C0-4E12-8EC5-D7540D97B5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63B661A-C0C0-4E12-8EC5-D7540D97B5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B26EB65-5A16-4CE1-9A94-B236BA37ACB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B26EB65-5A16-4CE1-9A94-B236BA37ACB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B26EB65-5A16-4CE1-9A94-B236BA37ACB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B26EB65-5A16-4CE1-9A94-B236BA37ACB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D91897EC-E679-445A-9CC3-4A17CE939D62}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+	EndGlobalSection
+EndGlobal

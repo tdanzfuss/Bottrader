@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="Persistance">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PersistanceService/PostgresWorker.cs">
+    <Files>
+      <File FileName="docker-compose.yml" Line="32" Column="5" />
+      <File FileName="ExchangeAdapterService/appsettings.json" Line="10" Column="32" />
+      <File FileName="PersistanceService/appsettings.json" Line="13" Column="34" />
+      <File FileName="PersistanceService/Dockerfile" Line="1" Column="1" />
+      <File FileName="PersistanceService/PostgresWorker.cs" Line="91" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bottrader" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="ExchangeAdapterService" expanded="True" />
+            <Node name="PersistanceService" expanded="True">
+              <Node name="PostgresWorker.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>values["Price"]</Value>
+          <Value>values["Price"]</Value>
+          <Value>((System.Text.Json.JsonElement)values["date"]).GetDateTime()</Value>
+          <Value>((JsonElement)bidsValuesArray[1]["Volume"]).GetDecimal()</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PersistanceService PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AlgorithmService FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Persistance" Name="Persistance">
+      <Items>
+        <StartupItem ItemId="{52DDE408-4B56-456E-9202-65A1971EA4DE}" ItemName="ExchangeAdapterService" ConfigurationId="Default" />
+        <StartupItem ItemId="{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}" ItemName="PersistanceService" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.ExchangeAdapterService PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

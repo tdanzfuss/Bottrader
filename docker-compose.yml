@@ -1,0 +1,35 @@
+﻿version: "3.9"
+services:    
+    redis:
+        image: "redis"
+        ports:
+            - "6379:6379"
+        volumes:
+            - "./redisData:/data"
+        entrypoint:
+            ["redis-server","--appendonly yes","--requirepass R3tr0R@bb1t"]
+    postgres:
+        image: "postgres"
+        environment:
+            - POSTGRES_PASSWORD=R3tr0R@bb1t
+        ports:
+            - "5432:5432"
+        volumes:
+            - "./postgresData:/var/lib/postgresql/data"
+            - "./postgresInit:/docker-entrypoint-initdb.d"
+    jupyter:
+        image: "tdanzfuss/sense_play"
+        ports:
+            - "10000:8888"
+        environment:
+            - JUPYTER_ENABLE_LAB=yes
+        volumes:
+            - "./jupyter:/home/jovyan/work"
+    lunoservice:
+        build:
+            context: .
+            dockerfile: ./ExchangeAdapterService/Dockerfile
+    postgresservice:
+        build:
+            context: .
+            dockerfile: ./PersistanceService/Dockerfile
