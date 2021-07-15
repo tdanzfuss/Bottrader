@@ -17,12 +17,23 @@ namespace PersistanceService
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
             using (var scope = host.Services.CreateScope())
             {
                 var db = scope.ServiceProvider.GetRequiredService<Model.TradebotContext>();
+                var logger = scope.ServiceProvider.GetRequiredService<ILogger<PostgresWorker>>();
+                // At startup wait for DB connection to become ready before launching migrations.
+                // We only wait max 5 retries with 2s delay
+                int retryCount = 0;
+                while (!db.Database.CanConnect())
+                {
+                    logger.LogWarning("Database not yet ready, retrying in 2s. RetryCount:"+ ++retryCount);
+                    await Task.Delay(2000);
+                    if (retryCount > 10)
+                        throw new Exception("Could not connect to database after 10 retries. ConnectionString: " + db.Database.GetConnectionString());
+                }
                 db.Database.Migrate();                
             }
             host.Run();

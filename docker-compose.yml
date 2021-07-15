@@ -29,7 +29,13 @@ services:
         build:
             context: .
             dockerfile: ./ExchangeAdapterService/Dockerfile
+        depends_on:
+            - "redis"
+            - "postgres"
     postgresservice:
         build:
             context: .
             dockerfile: ./PersistanceService/Dockerfile
+        depends_on:
+            - "redis"
+            - "postgres"
