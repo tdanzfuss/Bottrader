@@ -1,30 +1,21 @@
-﻿<Properties StartupConfiguration="Persistance">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PersistanceService/PostgresWorker.cs">
+﻿<Properties StartupConfiguration="{57AD8E5A-466F-4392-8D26-C21A0B9ECD1C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PersistanceService/Program.cs">
     <Files>
       <File FileName="docker-compose.yml" Line="32" Column="5" />
-      <File FileName="ExchangeAdapterService/appsettings.json" Line="10" Column="32" />
-      <File FileName="PersistanceService/appsettings.json" Line="13" Column="34" />
-      <File FileName="PersistanceService/Dockerfile" Line="1" Column="1" />
-      <File FileName="PersistanceService/PostgresWorker.cs" Line="91" Column="42" />
+      <File FileName="ExchangeAdapterService/appsettings.json" />
+      <File FileName="PersistanceService/appsettings.json" />
+      <File FileName="PersistanceService/Dockerfile" />
+      <File FileName="PersistanceService/PostgresWorker.cs" />
+      <File FileName="PersistanceService/Program.cs" Line="39" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Bottrader" expanded="True">
-            <Node name="Solution Items" expanded="True" />
-            <Node name="ExchangeAdapterService" expanded="True" />
             <Node name="PersistanceService" expanded="True">
-              <Node name="PostgresWorker.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>values["Price"]</Value>
-          <Value>values["Price"]</Value>
-          <Value>((System.Text.Json.JsonElement)values["date"]).GetDateTime()</Value>
-          <Value>((JsonElement)bidsValuesArray[1]["Volume"]).GetDecimal()</Value>
         </State>
       </Pad>
     </Pads>

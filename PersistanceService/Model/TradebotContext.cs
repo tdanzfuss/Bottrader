@@ -14,7 +14,7 @@ namespace PersistanceService.Model
         {
         }
 
-        public TradebotContext([NotNullAttribute] DbContextOptions options) : base(options)
+        public TradebotContext([NotNullAttribute] DbContextOptions<TradebotContext> options) : base(options)
         {
 
         }
